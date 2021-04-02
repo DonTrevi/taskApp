@@ -1,4 +1,3 @@
-//TODO: Tengo que empezar a codear!.
 document.getElementById('formTask').addEventListener('submit', saveTask)
 
 function saveTask(e) {
@@ -48,6 +47,7 @@ function getTasks() {
 }
 
 function deleteTask(title) {
+  //TODO: Preguntar antes de borrar
   let tasks = JSON.parse(localStorage.getItem('tasks'));
   for(let i = 0; i < tasks.length; i++) {
     if(tasks[i].title == title){
